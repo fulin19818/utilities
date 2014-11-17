@@ -35,7 +35,7 @@ public class orm
 		
 		try 
 		{
-			m = c.getConstructor(null);
+			m = c.getConstructor();
 			
 		} catch (NoSuchMethodException | SecurityException e) 
 		{
@@ -58,7 +58,7 @@ public class orm
 		}
 		
 		try {
-			obj=conn.newInstance(null);
+			obj=conn.newInstance();
 		} catch (InstantiationException | IllegalAccessException
 				| IllegalArgumentException | InvocationTargetException e) {
 			// TODO Auto-generated catch block
