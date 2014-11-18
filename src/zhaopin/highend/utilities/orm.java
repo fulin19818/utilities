@@ -10,6 +10,12 @@ public class orm
 {
 	
 	
+	/**
+	 * 根数数据行与类全路径获取实体
+	 * @param dr	数据行
+	 * @param path	类全路径
+	 * @return	反射加载实体
+	 */
 	@SuppressWarnings("unchecked")
 	public static Object getInstanceByDataRow(DataRow dr,String path)
 	{
@@ -48,6 +54,12 @@ public class orm
 		return obj;
 	}
 	
+	/**
+	 * 根据数据行与类构造函数获取反射对象
+	 * @param dr	数据航
+	 * @param conn	类构造函数
+	 * @return		实体
+	 */
 	private static Object getInstanceByDataRow(DataRow dr,Constructor<?> conn)
 	{
 		Object obj=null;
