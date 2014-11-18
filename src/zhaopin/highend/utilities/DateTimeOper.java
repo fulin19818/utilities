@@ -16,6 +16,17 @@ public class DateTimeOper
 		return new java.sql.Date(date.getTime());
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
+	public static String ConverttoString(java.util.Date date,String format)
+	{
+		SimpleDateFormat mt=new SimpleDateFormat(format);
+		
+		return mt.format(date);
+	}
+	
 	
 	/**
 	 * 获取日期
